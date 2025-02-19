@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Loja Online</h1>
+        <div class="products" id="products"></div>
+        <div class="cart-icon" onclick="openCartModal()">
+            🛒 <span id="cartCount">0</span>
+        </div>
+        <!-- Modal do Carrinho -->
+        <div id="cartModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeCartModal()">&times;</span>
+                <h2>Carrinho de Compras</h2>
+                <div class="cart" id="cart"></div>
+                <p id="total">Total: R$ 0.00</p>
+                <button onclick="makeOrder()">Fazer Pedido</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
